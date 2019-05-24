@@ -1,0 +1,103 @@
+.hero {
+  background: url(./assets/bg.jpg);
+  background-size: cover;
+
+  .highlight {
+    color: $orange;
+  }
+  
+  .logo {
+    margin: 0.5em;
+    font-size: 0.8rem;
+
+    @include from($desktop) {
+      font-size: 1rem;
+    }
+    img {
+      vertical-align: middle;
+      max-height: 3em;
+    }
+
+    .logo-title {
+      vertical-align: middle;
+      text-shadow: 0 20px 50px $black;
+      font-weight: bold;
+      font-size: 2em;
+      color: $beige-lighter;
+    }
+  }
+
+  .hero-video {
+    min-width: $desktop;
+  }
+
+  .hero-body {
+  
+    padding-bottom: 0em;
+    @include from($desktop) {
+      padding: 0 22% 0 22%;
+    }
+
+    .title {
+      color: $beige-lighter;
+      text-shadow: 0px 0px 9px $black;
+      
+      font-size: 1.8em;
+      @include from($desktop) {
+        font-size: 3rem;
+        text-align: center;
+      }
+    }
+    
+    .subtitle {
+      color: $beige-lighter;
+      text-shadow: 0px 0px 9px $black;
+      
+      font-size: 0.8rem;
+      @include from($desktop) {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+
+    .button {
+      text-shadow: 0px 0px 9px $black;
+      margin: 0.3em;
+      
+    }
+
+    .btn-readmore {
+      &:hover {
+        color: $black;
+      }
+      //color: $black;
+      //background-color: $orange;
+    }
+
+    .btn-early {
+      color: $black;
+      background-color: $orange;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  .hero-video {
+    opacity: 0.1;
+  }
+}
+
+
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+     }
+}
+.pulse {
+  animation: shadow-pulse 1s infinite;
+}

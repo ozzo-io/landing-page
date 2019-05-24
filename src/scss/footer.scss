@@ -1,0 +1,99 @@
+
+.hero-foot{
+  font-size: 0.9em;
+  color: white;
+  padding: 0em 1.5em 3em 1.5em;
+  
+  @include from($desktop) {
+    font-size: 1.2rem;
+  }
+
+  .picto{
+    font-size: 1.5em;
+    @include from($desktop) {
+      padding: 0 0.5em 0 0;
+      font-size: 1.8em;
+    }
+  }
+
+  .chiffre {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    .plus {
+      font-size: 1.2rem;
+    }
+
+    @include from($desktop) {
+      font-size: 2rem;
+      .plus {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .subject {
+    font-size: 0.9em;
+    text-align: center;
+    @include from($desktop) {
+      font-size: 1.1em;
+    }
+  }
+}
+
+#a { grid-area: a; }
+#b { grid-area: b; }
+#c { grid-area: c; }
+#d { grid-area: d; }
+
+#grid {
+  display: grid;
+  width: 768px;
+  grid-template-areas:
+    "a a a "
+    "b c d ";
+
+  grid-row-gap: 1rem;
+}
+
+#b1 { grid-area: b1; }
+#b2 { grid-area: b2; }
+#b3 { grid-area: b3; }
+
+@include from($desktop) {
+  #b {
+    display: grid;
+    grid-template-areas: 
+      "b1 b2"
+      "b3 b3";
+    grid-row-gap: 0rem;
+  }
+}
+
+#c1 { grid-area: c1; }
+#c2 { grid-area: c2; }
+#c3 { grid-area: c3; }
+
+@include from($desktop) {
+  #c {
+    display: grid;
+    grid-template-areas: 
+      "c1 c2"
+      "c3 c3";
+    grid-row-gap: 0rem;
+  }
+}
+
+#d1 { grid-area: d1; }
+#d2 { grid-area: d2; }
+#d3 { grid-area: d3; }
+
+@include from($desktop) {
+  #d {
+    display: grid;
+    grid-template-areas: 
+      "d1 d2"
+      "d3 d3";
+    grid-row-gap: 0rem;
+  }
+}

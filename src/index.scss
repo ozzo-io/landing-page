@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// Set your brand colors
+$purple: #8A4D76;
+$orange: #ffa64d;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$grey-dark: #212121;
+
+// Update Bulma's global variables
+$family-sans-serif: "Montserrat";
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $beige-light;
+$link: $orange;
+
+
+// Update some of Bulma's component variables
+$body-background-color: $grey-dark;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+  body {
+    
+  }
+}
+// Import only what you need from Bulma
+//@import "./scss/debug.scss";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+@import "./scss/hero.scss";
+@import "./scss/helpers.scss";
+@import "./scss/blockquote.scss";
+@import "./scss/footer.scss";
+@import "./scss/nav.scss";

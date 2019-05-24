@@ -1,0 +1,98 @@
+
+.quote {
+  padding: 0.5em 2em;
+  position: absolute; 
+  margin-left: auto; 
+  margin-right: auto; 
+  left: 0; 
+  right: 0;
+  top: 3.5em;
+  .center {
+    flex-direction: column;
+  }
+
+  @include from($desktop) {
+    width: $desktop - 400;
+    top: 1.2em;
+    text-shadow: 0 1px 1px $black;
+  }
+
+
+  blockquote {
+    font-family: 'Special Elite', cursive;
+    color: $grey-light;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: flex;
+    @include from($desktop) {
+      font-size: 1.2rem;
+    }
+  }
+  
+  blockquote q span { 
+    will-change: opacity, filter;
+    opacity: 0;
+    filter: blur(0px);
+  }
+  
+  cite {
+    color: $grey-light;
+    font-family: 'Special Elite', cursive;
+    line-height: 1;
+    text-align: right;
+    width: 100%;
+    font-size: 0.8rem;
+    vertical-align: top;
+    @include from($desktop) {
+      font-size: 1rem;
+    }
+  }
+}
+
+
+/*blockquote {
+  font-family: 'Special Elite', cursive;
+  color: $grey-light;
+  font-size: 1rem;
+  @include from($desktop) {
+    font-size: 1.2rem;
+  }
+}
+
+cite {
+  color: $grey-light;
+  font-family: 'Special Elite', cursive;
+  line-height: 1;
+  text-align: right;
+  width: 100%;
+  font-size: 0.8rem;
+  vertical-align: top;
+  @include from($desktop) {
+    font-size: 1rem;
+  }
+}
+
+blockquote q {
+  font-style: italic;
+}
+blockquote q span { 
+  will-change: opacity, filter;
+  opacity: 0;
+  filter: blur(0px);
+}
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+    content: open-quote;
+    margin-right: .8rem;
+}
+q:after {
+  content: close-quote;
+}
+q:before, q:after {
+  color: #ccc;
+  font-size: 3rem;
+}
+*/
