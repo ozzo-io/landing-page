@@ -31,34 +31,56 @@
     min-width: $desktop;
   }
 
+  .cnt-readmore {
+    margin: 1em;
+    //text-shadow: 0px 0px 3px $beige-lighter;
+    padding-bottom: 2rem; 
+    a: {
+      color: $beige-lighter;
+    }
+  }
+
   .hero-body {
-  
     padding-bottom: 0em;
     @include from($desktop) {
-      padding: 0 22% 0 22%;
+      padding: 0 30% 0 30%;
     }
 
     .title {
       color: $beige-lighter;
       text-shadow: 0px 0px 9px $black;
-      
-      font-size: 1.8em;
+      font-weight: 600;
+      padding-bottom: 1.6rem;
+      font-size: 1.9em;
       @include from($desktop) {
-        font-size: 3rem;
+        font-size: 4rem;
         text-align: center;
       }
     }
+
     
+    .toptitle {
+      color: $beige-lighter;
+      text-shadow: 0px 0px 9px $black;
+      font-size: 0.7rem;
+      @include from($desktop) {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+
+
     .subtitle {
       color: $beige-lighter;
       text-shadow: 0px 0px 9px $black;
-      
-      font-size: 0.8rem;
+      font-weight: 300;
+      font-size: 1rem;
       @include from($desktop) {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
       }
     }
+
 
     .button {
       text-shadow: 0px 0px 9px $black;
@@ -66,18 +88,12 @@
       
     }
 
-    .btn-readmore {
-      &:hover {
-        color: $black;
-      }
-      //color: $black;
-      //background-color: $orange;
-    }
+
 
     .btn-early {
-      color: $black;
-      background-color: $orange;
+      
       &:hover {
+        background-color: $orange;
         color: $black;
       }
     }

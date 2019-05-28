@@ -1,0 +1,22 @@
+.how {
+  font-size:1.2em;
+  
+  @include from($desktop) {
+    padding: 0 1% 0 1%;
+  }
+
+  .column {
+    margin: 1em;
+  }
+
+  .title {
+    font-size: 2em;
+    font-weight: 500;
+    color: $beige-lighter;
+  }
+
+  .feature-text {
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+}
