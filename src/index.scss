@@ -3,6 +3,7 @@
 // Set your brand colors
 $blue: #456990;
 $green: #49BEAA;
+//$orange: #ffdd57;
 $orange: #ffa64d;
 $pink: #EF767A;
 $brown: #212121;
@@ -17,13 +18,19 @@ $link: $beige-lighter;
 $link-hover: $green;
 $text: $beige-lighter;
 
-
+body {
+  overflow-x: hidden;
+}
 // Update some of Bulma's component variables
 $body-background-color: $grey-dark;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+//modal
+$modal-card-body-background-color: $brown;
+$modal-card-title-color: $beige-lighter;
+$modal-card-head-background-color: $green;
 
 // Import only what you need from Bulma
 //@import "./scss/debug.scss";
@@ -36,6 +43,8 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/elements/other.sass";
 
 @import "./scss/hero.scss";
 @import "./scss/how.scss";

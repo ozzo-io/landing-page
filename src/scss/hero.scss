@@ -1,17 +1,16 @@
 .hero {
   background: url(./assets/bg.jpg);
   background-size: cover;
-
   .highlight {
     color: $orange;
   }
   
   .logo {
     margin: 0.5em;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 
     @include from($desktop) {
-      font-size: 1rem;
+      font-size: 1em;
     }
     img {
       vertical-align: middle;
@@ -41,6 +40,7 @@
   }
 
   .hero-body {
+
     padding-bottom: 0em;
     @include from($desktop) {
       padding: 0 30% 0 30%;
@@ -49,11 +49,11 @@
     .title {
       color: $beige-lighter;
       text-shadow: 0px 0px 9px $black;
-      font-weight: 600;
-      padding-bottom: 1.6rem;
-      font-size: 1.9em;
+      font-weight: 500;
+      padding-bottom: 0.7em;
+      font-size: 2.5em;
       @include from($desktop) {
-        font-size: 4rem;
+        font-size: 4em;
         text-align: center;
       }
     }
@@ -62,9 +62,9 @@
     .toptitle {
       color: $beige-lighter;
       text-shadow: 0px 0px 9px $black;
-      font-size: 0.7rem;
+      font-size: 1em;
       @include from($desktop) {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         text-align: center;
       }
     }
@@ -74,9 +74,9 @@
       color: $beige-lighter;
       text-shadow: 0px 0px 9px $black;
       font-weight: 300;
-      font-size: 1rem;
+      font-size: 1em;
       @include from($desktop) {
-        font-size: 1.3rem;
+        font-size: 1.4em;
         text-align: center;
       }
     }
@@ -100,10 +100,10 @@
   }
 
   .hero-video {
+    overflow-y: hidden;
     opacity: 0.1;
   }
 }
-
 
 @keyframes shadow-pulse
 {

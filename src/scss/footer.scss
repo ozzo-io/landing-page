@@ -2,8 +2,12 @@
 .hero-foot{
   font-size: 0.9em;
   color: white;
-  padding: 0em 1.5em 3em 1.5em;
+  padding: 3em 1.5em 3em 1.5em;
   
+  .highlight {
+    color: $orange;
+  } 
+
   @include from($desktop) {
     font-size: 1.2rem;
   }

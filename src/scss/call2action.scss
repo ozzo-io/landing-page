@@ -1,11 +1,17 @@
 .call2action {
-  padding: 80px 0;
-  background: url('./assets/bg-c2a.svg');
+  padding: 60px 0;
+  @include from($desktop) {
+    padding:80px 0;
+  }
+  //background: center url('./assets/bg-c2a.svg');
+  background-size: cover;
   background-color: $green;
   .title {
-    color: $black;
+    color: $brown;
     font-weight: 500;
-    font-size: 2.75rem;
-    padding-bottom: 1rem;
+    font-size: 1.5em;
+    @include from($desktop) {
+      font-size: 2.75em;
+    }
   }
 }
