@@ -1,0 +1,15 @@
+.partners {
+  background-color: #313131;
+  width: 50%;
+  .title {
+    padding-top: 1em;
+    text-align: center;
+    color: $beige-lighter;
+  }
+
+  img {
+    @include from($desktop) {
+      height: 150px;
+    }
+  }
+}

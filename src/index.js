@@ -2,18 +2,20 @@ require('./index.scss');
 
 function splitWords() {
   let quote = document.querySelector("blockquote q");
-  quote.innerText.replace(/(<([^>]+)>)/ig,"");
-  quotewords = quote.innerText.split(" "),
-  wordCount = quotewords.length;
-  quote.innerHTML = "";
-  for (let i=0; i < wordCount; i++) {
-    quote.innerHTML += "<span>"+quotewords[i]+"</span>";
-    if (i < quotewords.length - 1) {
-      quote.innerHTML += " ";
+  if (null !== quote) {
+    quote.innerText.replace(/(<([^>]+)>)/ig,"");
+    quotewords = quote.innerText.split(" "),
+    wordCount = quotewords.length;
+    quote.innerHTML = "";
+    for (let i=0; i < wordCount; i++) {
+      quote.innerHTML += "<span>"+quotewords[i]+"</span>";
+      if (i < quotewords.length - 1) {
+        quote.innerHTML += " ";
+      }
     }
+    quotewords = document.querySelectorAll("blockquote q span");
+    fadeWords(quotewords);
   }
-  quotewords = document.querySelectorAll("blockquote q span");
-  fadeWords(quotewords);
 }
 
 function getRandom(min, max) {
