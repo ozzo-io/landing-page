@@ -38,7 +38,8 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('css/main.css'),
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({ filename: 'index.html', template: './src/index.html' }),
+    //new HtmlWebpackPlugin({ filename: 'thankyou.html', template: './src/thankyou.html' }),
     new CopyWebpackPlugin([
       { from: 'src/assets', to: 'assets' }, 
       { from: 'src/browserconfig.xml', to: 'browserconfig.xml' },

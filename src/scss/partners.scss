@@ -1,15 +1,22 @@
 .partners {
   background-color: #313131;
   width: 50%;
+
   .title {
+    @include from($desktop) {
+      margin-left: 1em;
+    }
     padding-top: 1em;
     text-align: center;
     color: $beige-lighter;
   }
 
   img {
-    @include from($desktop) {
-      height: 150px;
-    }
+    max-height: 150px;
+  }
+
+  .ptr-logo {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }

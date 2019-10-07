@@ -81,6 +81,16 @@
       }
     }
 
+    .comment{
+      font-weight: 300;
+      font-size: 0.8em;
+      text-align: center;
+      @include from($desktop) {
+        font-size: 0.7em;
+        
+      }
+    }
+
 
     .button {
       text-shadow: 0px 0px 9px $black;
